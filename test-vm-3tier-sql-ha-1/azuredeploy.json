@@ -7,9 +7,9 @@
       "metadata": {
         "description": "Select the appropriate Repository Base URL containing Pattern Templates and Resource Templates"
       },
-      "defaultValue": "https://raw.githubusercontent.com/mrptsai/External-Cloud/",
+      "defaultValue": "https://raw.githubusercontent.com/dmar268/ARMTemplates1/",
       "allowedValues": [
-        "https://raw.githubusercontent.com/mrptsai/External-Cloud/"
+        "https://raw.githubusercontent.com/dmar268/ARMTemplates1/"
       ]
     },
     "baseBranch": {
