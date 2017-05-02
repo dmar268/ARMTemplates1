@@ -20,8 +20,6 @@ $template = $templatePath + '\' + $templateFile
 }
 
 
-
-
 ### Define test-vm-3tier-sql-ha-1
 {
 $location = 'Australia Southeast'

@@ -29,9 +29,7 @@
       },
       "allowedValues": [
         "vm-3tier-sql-ha-1",
-        "vm-3tier-poc-1",
-        "test-vm-3tier-sql-ha-1",
-        "test-vm-3tier-poc-1"
+        "vm-3tier-poc-1"
       ],
       "defaultValue": "vm-3tier-sql-ha-1"
     },
@@ -359,14 +357,14 @@
       "metadata": {
         "description": "The IP address of the new AD VM"
       },
-      "defaultValue": "192.168.0.65"
+      "defaultValue": "192.168.0.68"
     },
     "adSecIpAddress": {
       "type": "string",
       "metadata": {
         "description": "The IP address of the new backup AD VM"
       },
-      "defaultValue": "192.168.0.66"
+      "defaultValue": "192.168.0.69"
     },
     "bizLBIPAddress": {
       "type": "string",
