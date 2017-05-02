@@ -36,7 +36,8 @@
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account. Use PowerShell and the following command to generate a unique Storage Account Name 'storage + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
-      }
+      },
+      "defaultValue": "sticgauvm11"
     },
     "storageNewOrExisting": {
       "type": "string",
@@ -53,19 +54,22 @@
       "type": "string",
       "metadata": {
         "description": "Specifiy the existing Storage Resource Group. Leave blank if creating a new Storage Account"
-      }
+      },
+      "defaultValue": "RG-Infra"
     },
     "virtualNetworkName": {
       "type": "string",
       "metadata": {
         "description": "Enter a Name for a Virtual Network or specify the name of an existing Virtual Network."
-      }
+      },
+      "defaultValue": "vnet-vm-poc"
     },
     "virtualNetworkNewOrExisting": {
       "type": "string",
       "metadata": {
         "description": "Is the Virtual Network New or Existing?"
       },
+      "defaultValue": "new",
       "allowedValues": [
         "new",
         "existing"
@@ -145,7 +149,8 @@
       "type": "string",
       "metadata": {
         "description": "Specify the DNS name for the Public IP Address"
-      }
+      },
+      "defaultValue": "icgauvmpoc"
     },
     "pipNewOrExisting": {
       "type": "string",

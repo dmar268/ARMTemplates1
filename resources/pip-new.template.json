@@ -5,7 +5,7 @@
         "pip-settings": {
             "type": "object",
             "metadata": {
-                "description": "These are settings for a Puplic IP Address"
+                "description": "These are settings for a Public IP Address"
             }
         }
     },
