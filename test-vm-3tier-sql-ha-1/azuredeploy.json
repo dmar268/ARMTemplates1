@@ -28,7 +28,10 @@
         "description": "Select the appropriate Architectural Pattern"
       },
       "allowedValues": [
-        "vm-3tier-sql-ha-1"
+        "vm-3tier-sql-ha-1",
+        "vm-3tier-poc-1",
+        "test-vm-3tier-sql-ha-1",
+        "test-vm-3tier-poc-1"
       ],
       "defaultValue": "vm-3tier-sql-ha-1"
     },
@@ -51,7 +54,7 @@
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for the Management Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'mgmt + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storage95retv2jno4d0a8"
+      "defaultValue": "sticgauvm11"
     },
     "mgmtStorageAccountType": {
       "type": "string",
@@ -79,21 +82,21 @@
       "metadata": {
         "description": "Specifiy the existing Storage Resource Group. Leave blank if creating a new Storage Account"
       },
-      "defaultValue": "DEV-Melbourne"
+      "defaultValue": "RG-Infra"
     },
     "webStorageAccountName0": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for every even Web Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'web + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storage95retv2jno4d0a8"
+      "defaultValue": "sticgauvm11"
     },
     "webStorageAccountName1": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for every odd Web Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'web + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storagevmc3yb7wgh69osk"
+      "defaultValue": "sticgauvm12"
     },
     "webStorageAccountType": {
       "type": "string",
@@ -121,21 +124,21 @@
       "metadata": {
         "description": "Specifiy the existing Storage Resource Group. Leave blank if creating a new Storage Account"
       },
-      "defaultValue": "DEV-Melbourne"
+      "defaultValue": "RG-Infra"
     },
     "bizStorageAccountName0": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for every even Business Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'biz + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storage95retv2jno4d0a8"
+      "defaultValue": "sticgauvm11"
     },
     "bizStorageAccountName1": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for every odd Business Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'biz + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storagevmc3yb7wgh69osk"
+      "defaultValue": "sticgauvm12"
     },
     "bizStorageAccountType": {
       "type": "string",
@@ -163,21 +166,21 @@
       "metadata": {
         "description": "Specifiy the existing Storage Resource Group. Leave blank if creating a new Storage Account"
       },
-      "defaultValue": "DEV-Melbourne"
+      "defaultValue": "RG-Infra"
     },
     "sqlStorageAccountName0": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for the every even SQL Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'sql + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storage95retv2jno4d0a8"
+      "defaultValue": "sticgauvm11"
     },
     "sqlStorageAccountName1": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for the every odd SQL Tier Server. Use PowerShell and the following command to generate a unique Storage Account Name 'sql + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storagevmc3yb7wgh69osk"
+      "defaultValue": "sticgauvm12"
     },
     "sqlStorageAccountType": {
       "type": "string",
@@ -205,21 +208,21 @@
       "metadata": {
         "description": "Specifiy the existing Storage Resource Group. Leave blank if creating a new Storage Account"
       },
-      "defaultValue": "DEV-Melbourne"
+      "defaultValue": "RG-Infra"
     },
     "dcStorageAccountName0": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for every even Domain Controller. Use PowerShell and the following command to generate a unique Storage Account Name 'dc + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storage95retv2jno4d0a8"
+      "defaultValue": "sticgauvm11"
     },
     "dcStorageAccountName1": {
       "type": "string",
       "metadata": {
         "description": "Enter a unique Name for a new Storage Account or specify the name of an existing Storage Account for every odd Domain Controller. Use PowerShell and the following command to generate a unique Storage Account Name 'dc + (-join ((48..57) + (97..122) | Get-Random -Count 15 | % {[char]$_}))'"
       },
-      "defaultValue": "storagevmc3yb7wgh69osk"
+      "defaultValue": "sticgauvm12"
     },
     "dcStorageAccountType": {
       "type": "string",
@@ -247,7 +250,7 @@
       "metadata": {
         "description": "Specifiy the existing Storage Resource Group. Leave blank if creating a new Storage Account"
       },
-      "defaultValue": "DEV-Melbourne"
+      "defaultValue": "RG-Infra"
     },
     "virtualNetworkName": {
       "type": "string",
@@ -347,7 +350,7 @@
     "subnet4Name": {
       "type": "string",
       "metadata": {
-        "description": "Specify the Subnet name for the sql Tier to create or to be used"
+        "description": "Specify the Subnet name for the DC Tier to create or to be used"
       },
       "defaultValue": "dc"
     },
