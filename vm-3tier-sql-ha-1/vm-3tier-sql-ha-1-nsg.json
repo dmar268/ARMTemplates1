@@ -5,7 +5,7 @@
         "nsg-settings": {
             "type": "object",
             "metadata": {
-                "description": "These are settings for the Availability Sets"
+                "description": "These are settings for the Network Security Groups"
             }
         },
         "base-config": {

@@ -376,7 +376,7 @@
     "bizPort": {
       "type": "string",
       "metadata": {
-        "description": "The Port Number for the Applicatin on the Business Tier"
+        "description": "The Port Number for the Application on the Business Tier"
       },
       "defaultValue": "12340"
     },
