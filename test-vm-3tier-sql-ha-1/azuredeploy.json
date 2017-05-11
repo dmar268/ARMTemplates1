@@ -45,7 +45,7 @@
       "metadata": {
         "description": "The prefix name for the the Always On Cluster deployment"
       },
-      "defaultValue": "sqlao-dev"
+      "defaultValue": "dev-sqlao"
     },
     "mgmtStorageAccountName": {
       "type": "string",
