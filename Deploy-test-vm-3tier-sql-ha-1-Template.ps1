@@ -5,7 +5,7 @@
 
 # To login to Azure Resource Manager
 # Login-AzureRmAccount
-# get-  --> Logon to MVP2
+# Login-AzureRmAccount -TenantId 820b3df5-13d5-4f8e-ac93-dadcbfa444ff  --> Logon to MVP2
 # Get-AzureRMSubscription
 
 
