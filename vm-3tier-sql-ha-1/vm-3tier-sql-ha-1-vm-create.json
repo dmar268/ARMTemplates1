@@ -31,7 +31,7 @@
     },
     "resources": [
         {
-            "name": "[concat('VM-MGT', copyIndex())]",
+            "name": "[concat('VM-MGT-', copyIndex())]",
             "copy": {
                 "name": "mgmtVmLoop",
                 "count": "[parameters('vm-settings').mgmt.count]"
@@ -69,7 +69,7 @@
             }
         },
         {
-            "name": "[concat('VM-WEB', copyIndex())]",
+            "name": "[concat('VM-WEB-', copyIndex())]",
             "copy": {
                 "name": "webVmLoop",
                 "count": "[parameters('vm-settings').web.count]"
@@ -107,7 +107,7 @@
             }
         },
         {
-            "name": "[concat('VM-BIZ', copyIndex())]",
+            "name": "[concat('VM-BIZ-', copyIndex())]",
             "copy": {
                 "name": "bizVmLoop",
                 "count": "[parameters('vm-settings').biz.count]"
@@ -145,7 +145,7 @@
             }
         },
         {
-            "name": "[concat('VM-SQL', copyIndex())]",
+            "name": "[concat('VM-SQL-', copyIndex())]",
             "copy": {
                 "name": "sqlVmLoop",
                 "count": "[parameters('vm-settings').sql.count]"
@@ -183,7 +183,7 @@
             }
         },
         {
-            "name": "[concat('VM-FSW', copyIndex())]",
+            "name": "[concat('VM-FSW-', copyIndex())]",
             "copy": {
                 "name": "fsmVmLoop",
                 "count": "[parameters('vm-settings').fsw.count]"

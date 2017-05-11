@@ -294,7 +294,7 @@
       "metadata": {
         "description": "Specify the Subnet name for the Management Tier to create or to be used"
       },
-      "defaultValue": "mgmt"
+      "defaultValue": "subnet-mgmt"
     },
     "subnet1Prefix": {
       "type": "string",
@@ -308,7 +308,7 @@
       "metadata": {
         "description": "Specify the Subnet name for the Web Tier to create or to be used"
       },
-      "defaultValue": "web"
+      "defaultValue": "subnet-web"
     },
     "subnet2Prefix": {
       "type": "string",
@@ -322,7 +322,7 @@
       "metadata": {
         "description": "Specify the Subnet name for the Biz Tier to create or to be used"
       },
-      "defaultValue": "biz"
+      "defaultValue": "subnet-app"
     },
     "subnet3Prefix": {
       "type": "string",
@@ -336,7 +336,7 @@
       "metadata": {
         "description": "Specify the Subnet name for the sql Tier to create or to be used"
       },
-      "defaultValue": "sql"
+      "defaultValue": "subnet-db"
     },
     "subnet4Prefix": {
       "type": "string",
@@ -350,7 +350,7 @@
       "metadata": {
         "description": "Specify the Subnet name for the DC Tier to create or to be used"
       },
-      "defaultValue": "dc"
+      "defaultValue": "subnet-domain"
     },
     "adPriIpAddress": {
       "type": "string",
