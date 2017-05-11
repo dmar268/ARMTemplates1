@@ -46,3 +46,8 @@ New-AzureRmResourceGroupDeployment `
     -TemplateFile $template `
     -Verbose -Force
 }
+
+
+### Remove Resource Group
+
+Remove-AzureRmResourceGroup  -Name $resourceGroupName -Force
